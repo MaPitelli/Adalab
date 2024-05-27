@@ -51,21 +51,17 @@ Comandos (más usados) de la terminal
 ls (list)
 El comando ls nos muestra un listado de los archivos y carpetas que hay en la carpeta actual.
 
-
-ls
+ls -la
 A los comandos se les puede pasar opciones. Podemos usar la opción especial -la para listar también los ficheros y carpetas ocultos. 
 La opción -l indica que queremos ver los ficheros en modo listado. La opción -a indica que queremos ver todos (all) los ficheros y carpetas, incluidos los ocultos. 
 La opción -la es la suma de las dos opciones juntas. Los ficheros y carpetas ocultos empiezan por . y por defecto no se ven ;). Por ejemplo un fichero oculto es .gitignore.
 
-
-ls -la
 Nota: Por cierto, ni Windows, ni Mac, ni Ubuntu muestran por defecto los ficheros ocultos de una carpeta. 
 Pero si abrimos la carpeta desde VS Code, este sí muestra los ficheros ocultos. 
 Sí quieres ver los ficheros y carpetas ocultos abre una carpeta en VS Code y pulsa en icono de arriba a la izquierda , aparecerán todos los ficheros que tenga esa carpeta.
 
 
 cd (change directory)
-
 El comando cd nos ofrece diferentes posibilidades a la hora de cambiar o movernos de carpeta. Para entrar en una carpeta hija de la carpeta actual usamos:
 cd nombre-de-carpeta-hija
 
@@ -80,86 +76,60 @@ Nota: Todo lo que aprendimos sobre rutas relativas y absolutas lo usamos mucho c
 
 mkdir (make directory)
 Nos permite crear una carpeta. Pero no entra en la carpeta, solo la crea.
-
-Para crear la carpeta proyecto escribimos el comando:
-
-
-mkdir proyecto
+Para crear la carpeta proyecto escribimos el comando: mkdir proyecto
 Para entrar dentro de la carpeta que acabamos de crear mira el punto anterior cd.
+
 
 cp (copy)
 Para copiar ficheros (o carpetas) usamos el comando cp seguido del fichero (o carpeta) de origen, un espacio y la ruta del fichero (o carpeta) de destino:
-
-
 cp fichero-de-origen.html carpeta-de-destino/fichero-de-destino.html
+
+
 mv (move)
 Para mover ficheros (o carpetas) usamos el comando mv seguido del fichero (o carpeta) de origen, un espacio y la ruta del fichero (o carpeta) de destino:
-
-
 mv fichero-de-origen.html carpeta-de-destino/fichero-de-destino.html
-Este comando también sirve para renombrar, ya que renombrar un fichero de a.html a b.html es lo mismo que moverlo.
+
+Este comando también sirve para renombrar, ya que renombrar un fichero de a.html a b.html es lo mismo que moverlo: mv a.html b.html
 
 
-mv a.html b.html
 clear
 A veces pasa que hemos introducido muchos comandos y sería genial poder limpiar la ventana. Para eso existe el comando clear.
 
 
-clear
 pwd (print working directory)
-Principalmente usaremos la terminal para movernos por el sistema de archivos y carpetas del ordenador. Así que es fundamental saber dónde estamos en cada momento. El comando pwd se encargará de mostrarnos en qué carpeta nos encontramos. Si escribimos:
-
-
-pwd
-La terminal mostrará la ruta absoluta de la carpeta en la que estemos, con este aspecto:
-
-
-/user/nombre-de-usuario
+Principalmente usaremos la terminal para movernos por el sistema de archivos y carpetas del ordenador. Así que es fundamental saber dónde estamos en cada momento. 
+El comando pwd se encargará de mostrarnos en qué carpeta nos encontramos. Si escribimos: pwd 
+La terminal mostrará la ruta absoluta de la carpeta en la que estemos, con este aspecto: /user/nombre-de-usuario
 Nos estaría indicando que nos encontramos en la carpeta nombre-de-usuario, que está dentro de la carpeta user, que está en la carpeta raíz de nuestro equipo.
 
-Si estás trabajando en un Ubuntu integrado dentro de Windows 10 y pruebas pwd verás que el resultado es:
-
-
-/mnt/c/Users/nombre-de-usuario
+Si estás trabajando en un Ubuntu integrado dentro de Windows 10 y pruebas pwd verás que el resultado es: /mnt/c/Users/nombre-de-usuario
 Es decir, en Windows 10 las unidades de nuestro ordenador como c:\ se montan dentro de /mnt/, por ello la ruta c:\Users\maricarmen corresponde con /mnt/c/Users/maricarmen.
+
 
 Historial de comandos
 Para movernos por los últimos comandos ejecutados usamos la teclas de flecha para arriba ⬆️ y para abajo ⬇️. Así nos ahorramos volver a escribir lo mismo muchas veces.
 
+
 Ayuda y opciones
 Si no sabemos cómo funciona un comando podemos buscar en Internet (siempre muy útil) o pediremos ayuda a la terminal. Por ejemplo para saber cómo funciona el comando ls escribimos la opción --help:
-
-
 ls --help
 El terminal mostrará una explicación de cómo se utiliza el comando y las opciones. Con esta información sabremos que para listar todos los ficheros de un directorio, incluidos los ocultos usaremos:
-
-
 ls -a
 Es decir, las letras que pongamos después del guion - son las opciones. Y podemos poner una o varias. Y todos los comandos tienen la opción de ayuda en --help.
+
 
 A practicar
 Durante los primeros días del curso te explicaremos en detalle cómo se usa la terminal y sus comandos. Pero es interesante que empieces a familiarizarte un poco, así que te recomendamos que hagas el siguiente ejercicio:
 
 Crea una carpeta en tu ordenador como lo has hecho siempre:
-
 Botón derecho
-
 Crear carpeta
-
 ...
-
 Abre la carpeta desde VS Code.
-
 Abre una terminal y desde ahí practica algunos comandos como...
-
 Crea una subcarpeta.
-
 Entra en la subcarpeta.
-
 Sube desde la subcarpeta a la carpeta superior.
-
 Lista el contenido de la carpeta.
-
 Trastea y prueba cosas...
-
 '''
