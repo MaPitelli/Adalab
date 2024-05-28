@@ -112,7 +112,7 @@ Para movernos por los últimos comandos ejecutados usamos la teclas de flecha pa
 
 Ayuda y opciones
 Si no sabemos cómo funciona un comando podemos buscar en Internet (siempre muy útil) o pediremos ayuda a la terminal. Por ejemplo para saber cómo funciona el comando ls escribimos la opción --help:
-ls --help
+ls --help (Enseña solo una brief description, para un help completo usar man ls (man for manual) y luego darle q para quit, salir del manual)
 El terminal mostrará una explicación de cómo se utiliza el comando y las opciones. Con esta información sabremos que para listar todos los ficheros de un directorio, incluidos los ocultos usaremos:
 ls -a
 Es decir, las letras que pongamos después del guion - son las opciones. Y podemos poner una o varias. Y todos los comandos tienen la opción de ayuda en --help.
