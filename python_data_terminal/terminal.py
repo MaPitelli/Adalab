@@ -156,10 +156,10 @@ ls -lh | tee output.py | less >> El listado ls -lh se crea con el tee en el arch
 
 ls -lh Pictures | sort | tee pics.py | less >> Se hace el listado ls -lh de la carpeta Pictures, se ordena, se crea un archivo con ese listado y luego se explora con less
 
-cowsay “Hola” >> Comando que imprime una vaca diciendo Hola
+cowsay -t “Hola” >> Comando que imprime una vaca diciendo Hola
 echo “Hola mundo” | lolcat >> imprime Hola mundo en colores 
 
-cowsay “Hola amigos” | lolcat >> Vaca colorida
+cowsay -t “Hola amigos” | lolcat >> Vaca colorida diciendo Hola amigos
 
 
 Encadenando comandos: operadores de control
@@ -335,7 +335,134 @@ ln -s <ruta> <Nombre> Esto para hacer link simbólicos, que son un tipo de archi
 
 ln -s Documents/Dev Desarrollo >> El link simbólico desarrollo apunta a la carpeta Documents/Dev
 
+Ejemplo de uso de enlaces simbólicos:
 
+Supongamos que tienes un archivo llamado imagen.jpg en tu directorio de imágenes (/home/usuario/imagenes). 
+Puedes crear un enlace simbólico llamado imagen_enlace.jpg en tu escritorio (/home/usuario/Escritorio) que apunte al archivo original. 
+Para hacerlo, ejecutarías el siguiente comando en la terminal:
+
+ln -s /home/usuario/imagenes/imagen.jpg /home/usuario/Escritorio/imagen_enlace.jpg
+
+Ahora, puedes abrir o acceder al archivo imagen.jpg desde tu escritorio usando el enlace simbólico imagen_enlace.jpg.
+
+Imagina que trabajas en un proyecto que requiere acceder a archivos ubicados en un servidor remoto. 
+Puedes crear enlaces simbólicos en tu computadora local que apunten a los archivos en el servidor remoto. 
+Esto te permite trabajar con los archivos como si estuvieran en tu computadora local, sin tener que descargarlos y cargarlos constantemente.
+Los enlaces simbólicos son una herramienta útil y versátil que puede ayudarte a organizar archivos y directorios, acceder a archivos en diferentes ubicaciones y mantener enlaces actualizados.
+
+
+Variables de entorno
+
+* La terminal tiene una configuración con diferentes valores, que se pueden acceder con las variables de entorno. Estas son muy importantes para la configuración general del sistema.
+* Podemos guardar alias para que se queden de manera permanente con esto.
+
+
+Cómo configurar variables de entorno
+
+Las variables de entorno son útiles cuando necesitamos que cierta información prevalezca para poder trabajar más rápido o necesitamos guardar información para no tener que recordarla constantemente. Siempre se crean en mayúsculas.
+
+printenv >> imprime todas las variables de entorno que tengo configuradas
+
+echo $<variables> esto nos sirve para imprimir una variable en particular.
+
+PATH tiene todas las rutas donde se encuentran los binarios en los que se ejecuta nuestro sistema. Hay varios manejadores de paquetes para binarios, pero no todas las veces se agregan a PATH, y se deben agregar a mano.
+
+
+Ejemplos de variables de entorno comunes:
+* PATH: Almacena la lista de directorios donde el sistema busca comandos ejecutables.
+* HOME: Indica el directorio personal del usuario actual.
+* USER: Contiene el nombre de usuario del usuario actual.
+* LANG: Especifica el idioma y la configuración regional del sistema.
+* TEMP: Define la ubicación predeterminada para almacenar archivos temporales.
+* ZSH_VERSION: Indica la versión del zsh que estás utilizando.
+* SHELL: Dirección de la shell que estás utilizando.
+
+Cómo acceder y modificar variables de entorno:
+* Acceder a variables de entorno: En la mayoría de los sistemas, se puede acceder al valor de una variable de entorno utilizando el nombre de la variable precedido por un signo de dólar ($). Por ejemplo, para obtener el valor de la variable PATH, se puede usar el comando: echo $PATH
+
+echo $HOME
+
+* En HOME, existe un archivo que se llama .zshrc que es donde está nuestra configuración de zsh. Lo podemos abrir con VS Code para modificarlo. En este archivo podemos crear alias.
+* Estando en el directorio home, usar ls -la para confirmar que el archivo .zshrc está en esta carpeta. 
+    * Luego usar el comando: code .zshrc para abrir el archivo usando VSC. 
+    * Luego solo hay que añadir los alias, guardar con superusuario y contraseña y usar el comando: source ~/.zshrc para actualizar. 
+    * Todo listo para usar los nuevos alias permanentes. Si no se quiere mas el alias, solo hay que borrarlo del archivo .zshrc, guardar y actualizar.
+
+* alias <nombre>="comando" para crear un alias útil.
+* Para modificar o crear una variable de entorno, se hace, por ejemplo PLATZI_MESSAGE=“Hola amigos". Siempre sin espacios !!!
+* Para agregar una ruta a la variable PATH ponemos en .zshrc PATH=$PATH:<ruta>, guardamos, atualizamos zsh en la terminal, y listo.
+* Es muuuy importante tener cuidado con los alias, nunca hay que nombrar un alias como un comando ya existente.
+
+* code <archivo> para abrir un archivo en VS Code desde la terminal > Hay que estar en el directorio del archivo en la terminal !!!
+* Si estoy por ejemplo en el directorio /Users/mairapitelli/git/Adalab y escribo el comando: code . me abre la carpeta Adalab en VSC. 
+
+
+
+Comandos de Búsqueda
+
+which cd >> Retorna which: no cd in ($PATH)
+Esto ocurre porque cd no es un binario. Al hacer el comando: type cd >> retorna cd is a shell buitin. 
+
+Ahora si hacemos: which code para ver donde está Visual Studio Code, retorna: /usr/local/bin/code
+
+find ./ -name <nombre del archivo que busco>
+El comando find va a buscar un archivo en todos los directorios del ordenador y retorna todos los directorios donde encuentra el archivo. 
+
+Usando wildcards con find
+
+find ./ -name *.txt >> retorna todos los archivos con extensión txt que encuentre
+
+find ./ -name *.txt | less >> Otra opción usando less
+
+find ./ -type d -name Documents >> Busca por tipo directorio la carpeta de nombre Documents
+
+find ./ -type f -name *.log >> Busca por tipo file todos los archivos que tengan la extensión .log en el nombre
+
+find ./ -size 20M >> Busca por tamaño todos los archivos que sean mayores que 20Mb
+
+
+
+Comando grep: Usa expresiones regulares
+
+cat unArchivoLargo.txt | grep "La línea que busco"
+# cat Te listará todo el contenido de ese archivo
+# grep te filtrará únicamente lo que quieres ver
+
+grep "string" archivo_*
+# grep buscará la palabra "string" en todos los archivos que comienzen por "archivo_" y te los mostrará.
+
+ls -al | grep myFile.txt
+# ls te dará la lista de todos tus archivos
+# grep filtrará todos y te mostrará únicamente el que deseas
+
+grep -i the movies.csv | less >> Retorna todos las peliculas dentro de movies.csv que empiecen por The, la i es para ignorar el case sensitive
+
+grep -c the movies.csv >> c para count, retorna el numero de veces que hay la palabra the dentro del archivo movies.csv
+Si el lugar de -c se usa -ci ignora el case sensitive y aumenta el número de resultados
+
+grep -vi towers movies.csv >> retorna todas las peliculas, excepto las que contengan towers, ignora el case sensitive y considera Towers o towers. 
+
+grep -vi towers movies.csv > sintowers.txt >> Esto guarda el resultado del filtro en el archivo sintowers.txt
+
+
+Comando wc: word count
+
+wc movies.csv >> retorna 3 numeros: el primer es cuantas líneas hay, el segundo es cuantas palabras hay y el tercer es el número de bits. 
+
+wc -l  miarchivo.txt >> Retorna el número de lineas de miarchivo.txt 
+
+wc -w  miarchivo.txt >> Retorna el número de palabras de miarchivo.txt
+
+wc -c  miarchivo.txt >> Retorna el número de bits de miarchivo.txt
+
+
+Imagina que tienes un archivo llamado test.txt y adentro contiene la siguiente frase: Imagina que quieres buscar algo
+Entonces, podemos usar grep así:
+
+grep "Imagina .* algo" test.txt
+
+# grep buscará alguna coincidencia, la expresion .* indica que ahí dentro puede haber una o más letras, cualquier que sea, así que podrías leerla como: Imagina (cualquier cosa) algo.
+Esto encontrará justo la frase que quieres: Imagina que quieres buscar algo
 
 
 
