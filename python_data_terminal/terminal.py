@@ -465,10 +465,270 @@ grep "Imagina .* algo" test.txt
 Esto encontrará justo la frase que quieres: Imagina que quieres buscar algo
 
 
+Utilidades de Red 
+
+1. ifconfig:
+* Función: Muestra la información de configuración de los dispositivos de red, incluyendo la dirección IP, la máscara de red, la dirección MAC y el estado de la conexión.
+* Ejemplo: ifconfig
+* Salida:
+lo0: flags=8000<UP,LOOPBACK,RUNNING,MULTICAST> mtu: 16384
+	inet 127.0.0.1 netmask 0xff00.0000.00ff.ffff loopback
+	inet6 ::1 prefixlen 128 fe80::1%lo0 scopeid 0xf000001
+	ether 00:00:00:00:00:00
+
+en0: flags=8023<UP,RUNNING,BROADCAST,MULTICAST> mtu: 1500
+	inet 192.168.1.100 netmask 255.255.255.0
+	inet6 fe80::20c:29ff:fe5d:972e prefixlen 64 scopeid 0x4
+	ether 00:25:90:2f:2a:55
+
+2. netstat -i:
+* Función: Muestra una lista de interfaces de red activas y su estado.
+* Ejemplo: netstat -i
+* Salida:
+Name Mtu  Receive  Transmit
+lo0    16384   12432562 10812864
+en0    1500    1399728   1348624
+
+3. ping:
+* Función: Envía paquetes de información a una dirección IP o nombre de host para verificar la conectividad y medir el tiempo de respuesta.
+* Ejemplo: ping www.google.com
+* Salida:
+PING www.google.com (142.250.189.142) 56(84) bytes of data.
+64 bytes from 142.250.189.142: icmp_seq=1 ttl=116 time=11.4 ms
+64 bytes from 142.250.189.142: icmp_seq=2 ttl=116 time=12.2 ms
+64 bytes from 142.250.189.142: icmp_seq=3 ttl=116 time=12.1 ms
+64 bytes from 142.250.189.142: icmp_seq=4 ttl=116 time=11.8 ms
+--- google.com ping statistics ---
+4 packets transmitted, 4 received, 0% packet loss, time 3004ms
+rtt min/avg/max/mdev = 11.377/11.972/12.508/0.400 ms
+
+Opciones de parámetros para el comando ping:
+* -c <número>: Limita el número de paquetes a enviar.
+* -s <tamaño>: Especifica el tamaño de los paquetes en bytes.
+Para hacer pruebas con paquetes de 20 bytes escribimos:
+ping -s 20 www.google.com
+
+
+4. curl:
+* Función: Descarga y muestra el contenido de una URL por la consola.
+* Ejemplo: curl www.google.com
+* Salida:
+<!DOCTYPE html>
+<html lang="es"><head>
+<meta charset="utf-8">
+<title>Google</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Search the world's information, including webpages, images, videos, and more.">
+<meta name="keywords" content="Google, search, information, world, webpages, images, videos">
+<meta name="theme-color" content="#4285f4">
+<link rel="icon" href="https://www.google.com/favicon.ico" type="image/
+
+
+5. wget:
+* Función: Descarga archivos de una URL y los guarda en un archivo local.
+* Ejemplo: `wget www.google.com`
+* Salida:
+
+--2024-06-02 15:14:34--  https://www.google.com/ [192.168.1.1]
+Connecting to www.google.com (192.168.1.1):64546... connected.
+HTTP request sent, awaiting response... 301 Moved Permanently
+Location: https://www.google.co.uk/
+--2024-06-02 15:14:35--  https://www.google.com/ [192.168.1.1]
+Reusing existing connection to www.google.com (192.168.1.1):64546.
+HTTP request sent, awaiting response... 200 OK
+Length: 34442 (34 KiB) [image/png]
+Saving to: index.html
+100% [██████████████████████████████████████████████████████████] 34442/34442 (33 KiB) in 3.6s (9.38 KiB/s) 2024-06-02 15:14:37 --Downloaded: 1 file in 3.6s (9.38 KiB/s)
+
+
+Opciones de parámetros para wget:
+
+* -O <archivo>: Especifica el nombre del archivo de salida.
+* -q: Silencia la salida verbose del comando.
+* -c: Continúa descargando un archivo parcialmente descargado.
+
+
+6. traceroute:
+
+* Función: Muestra la ruta que toman los paquetes de datos para llegar a un destino específico, incluyendo los tiempos de respuesta de cada salto.
+* Ejemplo: traceroute www.google.com
+* Salida:
+
+traceroute to www.google.com (142.250.189.142), 30 hops max, 60 byte packets
+1  192.168.1.1 (192.168.1.1)  1.299 ms  1.227 ms  1.184 ms
+2  router.example.com (10.0.0.1)  11.785 ms  10.902 ms  10.821 ms
+3  edge-router.example.com (10.1.0.1)  22.345 ms  21.678 ms  21.501 ms
+4  provider-router.example.com (10.2.0.1)  33.456 ms  32.789 ms  32.612 ms
+... (26 more hops)
+29  142.250.186.147 (142.250.186.147)  56.789 ms  55.012 ms  54.934 ms
+30  142.250.189.142 (142.250.189.142)  57.890 ms  56.123 ms  55.456 ms
+
+
+Opciones de parámetros para traceroute:
+
+* -n: No muestra los nombres de host, solo las direcciones IP.
+* -m <saltos_máximos>: Limita el número máximo de saltos a rastrear.
+* -p <puerto>: Especifica el puerto al que enviar los paquetes de prueba.
+
+Consejos adicionales:
+
+* Para obtener ayuda detallada sobre un comando específico, use el comando man <nombre_comando>.
+* Combine comandos con pipes | para procesar la salida de uno en otro.
+* Use alias para crear accesos directos a comandos complejos o frecuentemente utilizados.
+* Explore herramientas gráficas de red como `nmap` y `wireshark` para análisis más profundos.
+
+
+
+Comprimiendo archivos tar y zip
+
+
+Puedes aprender a crear archivos comprimidos .zip o .tar que vemos en nuestro sistema operativo. Estos encapsulan muchos archivos e incluso carpetas.
+Comprimiendo archivos con formato .tar
+El formato .tar es un tipo de compresión bastante usado en UNIX. Originalmente era utilizado para almacenar información en cintas magnéticas, así que está hecho especialmente para comprimir los archivos de forma lineal.
+Para comprimir con este formato en la terminal usamos el comando tar que tiene ciertas opciones para aprender.
+Sintaxis:
+tar [opciones] [nombreDelArchivoComprimido] [archivoAComprimir]
+Comprimir (-c)
+Para comprimir un archivo utilizamos la opción -c. En todos los casos hay que usar la opción -f para indicar que estamos comprimiendo o descomprimiendo archivos.
+tar -cf compressed.tar Documents/toCompress/
+
+Ver lo que está haciendo el comando (-v)
+Si queremos ver lo que el comando está comprimiendo a medida que se va ejecutando, usamos la opción -v. Por cierto la opción -v es de "Verbose" y muchos comandos la usan, también te la puedes encontrar como --verbose.
+tar -cvf compressed.tar Documents/toCompress/ 
+    tar -cvf <archivocomprimido.tar><carpeta que queremos comprimir> >> comando tar, parámetros compress, verbose, file.
+
+Comprimir con formato ".tar.gz" (-z)
+El formato ".tar.gz" o también ".tgz" es una versión extendida del formato tradicional de compresión ".zip" que puede manejar y comprimir archivos más grandes.
+Para manejar la compresión de archivos ".tar.gz" o ".tgz" se usa la opción -z además de tener que especificar en el nombre de archivo la extensión que quieres usar.
+tar -czvf compressed.tar.gz Documents/toCompress/
+    tar -cvzf tocompress.tar.gz ToCompress >> comando tar, parámetros compress, verbose, gz tipo de compresión, file, archivo que será generado, directorio que será comprimido. 
+
+
+Descomprimir (-x)
+Para descomprimir es mucho más sencillo, solo hay que especificar la opción -x y el archivo comprimido que se quiere descomprimir.
+Si se quiere descomprimir un archivo de extensión ".tar.gz" o ".tgz" hay que especificar la opción -z también.
+tar -xzvf compressed.tar.gz 
+    tar -xzvf <archivo a descomprimir>.tar.gz
+    tar -xvf <archivo a descomprimir>.tar
+
+
+Comprimiendo archivos .zip
+Para comprimir usamos el comando zip con el nombre que quieres que tenga y lo que quieres comprimir.
+Si quieres comprimir una carpeta con archivos dentro, tienes que especificar la opción -r de "recursive".
+zip -r compressed.zip Documents/toCompress/
+    zip -r <nombre del archivo a comprimir>.zip <directorio que se quiere comprimir>
+
+
+Y para descomprimir es incluso más fácil, solo escribe el comando unzip seguido de lo que quieres descomprimir.
+unzip compressed.zip
+    unzip <nombre del archivo a descomprimir>.zip
+
+Hay también el comando rar para comprimir, casi idéntico al zip, y para descomprimir se usa el unrar
+
+
+Tabla de comandos tar y zip
+
+    Opciones del comando tar
+    Recuerda siempre colocar la opción -f. 
+
+    | Opción | Función | 
+    | --- | --- | 
+    | c | Comprimir | 
+    | x | Descomprimir | 
+    | z | Especifica que lo que se va a comprimir o descomprimir tiene extensión ".tar.gz" o ".tgz" | 
+    | v | Muestra lo que está comprimiendo o descomprimiendo |
+
+    Comando zip
+    Recuerda que si lo que vas a comprimir es una carpeta tienes que usar la opción -r.
+    | Comando | Función | 
+    | --- | --- | 
+    | zip | Comprimir | 
+    | unzip | Decomprimir |
+
+
+
+Manejo de Procesos
+
+ps >> Ver los procesos que están activos en la terminal 
+
+Para matar procesos, se hace un ps para ver los procesos que están activos, luego se coge el ID del proceso que se quiere matar y se usa el comando kill
+
+kill 25367
+pkill -nombre >> Para matar el proceso por nombre
+
+Comando top: Nos muestra los procesos que están usando mas recursos
+Se puede teclear h cuando esté el tor ejecutándose para help, así se puede ver los parámetros.
+
+Comando htop es aún mas completo que el top, puede que haya que instalarlo >> Investigar antes de usar
 
 
 
 
+Como viste en la clase de procesos podemos correr de manera asíncrona comandos, y si estos no se completan quedarán activos dentro de los procesos de la terminal.
+Cuando un proceso está en ejecución sin que sea mostrado en la terminal se dice que se está ejecutando en el background. 
+Si se muestra la ejecución del comando dentro de la terminal se dice que está en el foreground. En esta clase aprenderás a cómo mover los procesos del background al foreground a tu voluntad, incluso a cómo suspenderlos.
+¿Te acuerdas del truco que aprendimos para tener un editor de texto supersencillo en la terminal? Lo usaremos en esta ocasión. Imagina que queremos una nota desde la terminal y para eso usamos:
+cat > mi_nota.txt 
+Nuestra terminal se verá con el prompt esperando a que ingresemos texto.
+
+Podemos escribir algo y después terminar el input del texto con CTRL+D, pero en esta ocasión no haremos eso. Lo que queremos hacer será suspender el proceso, esto lo podemos hacer con CTRL+Z. 
+El resultado que nos mostrará la terminal deberá ser uno donde nos indique la suspensión del comando cat.
+
+Ahora hemos movido nuestro comando exitosamente al background de la terminal. Para consultar todos los procesos que tenemos en background podemos hacerlo con el comando jobs.
+
+A la izquierda aparece el número del trabajo (!!! cuidado que no es lo mismo que el process ID). 
+Si queremos traer la ejecución de nuevo a la terminal, es decir, al foreground; debemos usar el comando fg y especificar qué número de trabajo queremos continuar. Para nuestro caso será el 1.
+fg 1 
+
+En caso de que estés usando ZSH como shell el formato para llamar el trabajo sería con un porcentaje. ZSH tiende a interpretar algunas cosas incluyendo las wildcards de manera diferente.
+fg %1 
+
+Una vez enviado al foreground veremos como se activa la ejecución del comando en la terminal y podremos seguir escribiendo nuestra nota. 
+Recuerda que una vez terminemos de escribir presionamos CTRL+D para terminar el input y guardar.
+
+Cuando se guarda nuestra nota nos daremos cuenta de que el proceso por fin termina y si usamos jobs no nos mostrará ningún trabajo en background.
+
+Existen otras formas de enviar comandos al background. La primera es usando el operador de control & al final de un comando. 
+Este operador nos permite enviar de manera directa un proceso al background una vez ejecutado. Por ejemplo:
+cat > mi_nota.txt & 
+
+La segunda forma es con el comando bg. Este sirve de manera similar que fg solo que en vez de traerlo al foreground este lleva un trabajo al background. Por ejemplo:
+bg 1 
+
+Bien, la pregunta ahora es ¿Cómo usamos bg? Imagina que abrimos algún programa de interfaz gráfica desde la terminal. En mi caso abriré el navegador Google Chrome. Para hacerlo desde la terminal solo ejecuta:
+google-chrome-stable 
+Y verás como se ejecuta pero no nos deja hacer ninguna otra tarea ya que la ventana del navegador está abierta:
+Para suspender el proceso como ya sabes lo hacemos con CTRL+Z y si revisamos con jobs veremos como el proceso se encuentra en pausa. 
+En este caso la ventana del navegador que se abrió no nos dejará interactuar ni escribir en ella.
+
+Como se ve en la imagen el navegador tiene el número de trabajo 1. Para dejar nuestro navegador corriendo y al mismo tiempo seguir trabajando en la terminal tenemos que reactivar este proceso y a la vez mandarlo al background. 
+Para ello ejecutamos:
+bg 1 
+Con esto podremos ver como nuestro proceso de Google Chrome sigue corriendo en el background dejando la terminal disponible para nosotros.
+
+
+
+Editores de texto en la terminal
+
+Cómo usar Vim en la terminal
+Para abrir o crear un archivo utilizando Vim escribe el comando vim [nombre del archivo]
+
+Por defecto no podrás escribir hasta que actives el modo de inserción. Para hacerlo usa la tecla i.
+
+Para salir del modo de inserción presiona la tecla escape. En el modo normal (en el que no puedes escribir) si escribes el slash / activarás un buscador similar al del comando less.
+
+Para borrar una línea, estando el modo normal, tienes que ubicarte sobre ella y presionar dd.
+
+Para guardar y salir presiona estando en el modo normal, activa los comandos usando : y escribe "wq". La letra "w" es para guardar y la letra "q" es para salir, también los puedes usar por separado.
+
+Luego podemos revisar el contenido con el comando cat.
+
+Tabla de comandos para uso de Vim
+vim >> Abre el archivo especificado. Si no existe lo crea
+:q >> Cierra el editor
+:w >> Guarda los cambios
+/[busqueda] >> Busca dentro del texto 
+dd >> En el modo normal, selecciona una línea y la borra
 
 
 '''
