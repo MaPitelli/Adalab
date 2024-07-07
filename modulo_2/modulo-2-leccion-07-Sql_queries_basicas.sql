@@ -52,3 +52,15 @@ WHERE country = 'USA' AND state IS NULL;
 -- Ejercicio 6
 SELECT DISTINCT country FROM customers
 WHERE credit_limit > 10000;
+
+
+
+-- ORDER TO WRITE COMMANDS (NOT THE SAME AS EXECUTION ORDER!!!)
+
+-- SELECT column1, column2, ...
+-- FROM table_name
+-- WHERE condition
+-- GROUP BY column
+-- HAVING condition
+-- ORDER BY column1 [ASC|DESC] ...
+-- LIMIT number;
