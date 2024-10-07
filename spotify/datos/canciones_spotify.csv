@@ -1,0 +1,79 @@
+,song,artist,date,explicit,uri_cancion,popularity,usuario,links,duracion
+0,Mía,['Belén Aguilera'],2024-06-27T07:10:12Z,False,spotify:track:4iVvZOJiBmQXZHKTdLTh7C,47,e4ta60wdfnbghf4t2uk6m9xu8,https://open.spotify.com/track/4iVvZOJiBmQXZHKTdLTh7C,207173
+1,Palabra Prohibida,['Samuraï'],2024-06-27T07:10:15Z,False,spotify:track:4sRulaggpSTT3mLCZsaJ5v,57,e4ta60wdfnbghf4t2uk6m9xu8,https://open.spotify.com/track/4sRulaggpSTT3mLCZsaJ5v,176881
+2,El Principio de algo,"['La La Love You', 'Samuraï']",2024-06-27T07:10:22Z,False,spotify:track:6tZI1nTl6m40HG5Rs7QuHL,67,e4ta60wdfnbghf4t2uk6m9xu8,https://open.spotify.com/track/6tZI1nTl6m40HG5Rs7QuHL,147907
+3,De Charco En Charco,"['Samuraï', 'Belén Aguilera']",2024-06-27T07:10:37Z,False,spotify:track:72nJMBop58qf4xbNwZD0qO,51,e4ta60wdfnbghf4t2uk6m9xu8,https://open.spotify.com/track/72nJMBop58qf4xbNwZD0qO,160589
+4,Sin Vergüenza,"['Arde Bogotá', 'Dani Fernández']",2024-06-27T07:10:56Z,False,spotify:track:0mJ2qmDI2X4wrSIIBrvvpN,63,e4ta60wdfnbghf4t2uk6m9xu8,https://open.spotify.com/track/0mJ2qmDI2X4wrSIIBrvvpN,216325
+5,Qué Vida Tan Dura,['Arde Bogotá'],2024-06-27T07:11:01Z,False,spotify:track:7pyilq0260Oo6cATaqsI7F,62,e4ta60wdfnbghf4t2uk6m9xu8,https://open.spotify.com/track/7pyilq0260Oo6cATaqsI7F,203796
+6,Olívia,['The Tyets'],2024-06-27T07:11:10Z,False,spotify:track:0gRIXIUFSqWqw5rXcmaf9o,56,e4ta60wdfnbghf4t2uk6m9xu8,https://open.spotify.com/track/0gRIXIUFSqWqw5rXcmaf9o,170735
+7,Más Colao Que el Colacao,['La La Love You'],2024-06-27T07:13:16Z,False,spotify:track:6ZoOG5syYD7pQTkwdYQKeo,56,e4ta60wdfnbghf4t2uk6m9xu8,https://open.spotify.com/track/6ZoOG5syYD7pQTkwdYQKeo,161186
+8,ANESTESIA,['Tatiana Delalvz'],2024-06-27T07:26:18Z,False,spotify:track:1rVw8fs4P5f6UGjhHEBnpW,26,e4ta60wdfnbghf4t2uk6m9xu8,https://open.spotify.com/track/1rVw8fs4P5f6UGjhHEBnpW,160866
+9,La Vuelta al Mundo,['Vicco'],2024-06-27T07:26:55Z,False,spotify:track:0KnQMnM6CfsH5A2V7g5FtK,28,e4ta60wdfnbghf4t2uk6m9xu8,https://open.spotify.com/track/0KnQMnM6CfsH5A2V7g5FtK,177482
+10,Disimulao,['Alizzz'],2024-06-27T07:40:22Z,False,spotify:track:7sqEqSeZRKrQzdkukwxFEo,35,e4ta60wdfnbghf4t2uk6m9xu8,https://open.spotify.com/track/7sqEqSeZRKrQzdkukwxFEo,219480
+11,"Si Me Necesitas, Llámame",['Siloé'],2024-06-27T16:26:30Z,True,spotify:track:4DEdfr4plBy97DH4YPg4At,52,e4ta60wdfnbghf4t2uk6m9xu8,https://open.spotify.com/track/4DEdfr4plBy97DH4YPg4At,242351
+12,La Cancion Mas Hermosa Del Mundo,['Joaquín Sabina'],2024-06-28T06:05:15Z,False,spotify:track:4awx6oByarFB5OyiZaOnIz,30,quesoymarmota,https://open.spotify.com/track/4awx6oByarFB5OyiZaOnIz,293146
+13,Love Of My Life - Remastered 2011,['Queen'],2024-06-28T06:05:31Z,False,spotify:track:4YJUTdZ0Pgl0ZeNyHYXeLd,70,quesoymarmota,https://open.spotify.com/track/4YJUTdZ0Pgl0ZeNyHYXeLd,217386
+14,Here Comes The Sun - Remastered 2009,['The Beatles'],2024-06-28T06:06:00Z,False,spotify:track:6dGnYIeXmHdcikdzNNDMm2,85,quesoymarmota,https://open.spotify.com/track/6dGnYIeXmHdcikdzNNDMm2,185733
+15,Starlight,['Muse'],2024-06-29T14:05:58Z,False,spotify:track:3skn2lauGk7Dx6bVIt5DVj,72,1118786026,https://open.spotify.com/track/3skn2lauGk7Dx6bVIt5DVj,240213
+16,Purple Rain,['Prince'],2024-06-29T14:06:29Z,False,spotify:track:7d4Ae9mG1mRNbrdHn27SwH,45,1118786026,https://open.spotify.com/track/7d4Ae9mG1mRNbrdHn27SwH,521866
+17,El Fin del Mundo,"['La La Love You', 'Axolotes Mexicanos']",2024-06-29T14:07:37Z,False,spotify:track:5SeYlZyKVENMOxiSPQkKyw,64,1118786026,https://open.spotify.com/track/5SeYlZyKVENMOxiSPQkKyw,188093
+18,Eso Que Tú Me Das,['Jarabe De Palo'],2024-06-29T14:08:43Z,False,spotify:track:40tFJtuES1da2fg0OurUdI,61,1118786026,https://open.spotify.com/track/40tFJtuES1da2fg0OurUdI,214553
+19,Me quedo conmigo,"['Taburete', 'Marlon']",2024-06-29T14:12:00Z,False,spotify:track:180iROAm7RprlfyB8SH5S6,52,1118786026,https://open.spotify.com/track/180iROAm7RprlfyB8SH5S6,182532
+20,De Perreo,['Marlon'],2024-06-29T14:12:08Z,False,spotify:track:5Hc7UPdnAVEwjvVG2d8fmk,49,1118786026,https://open.spotify.com/track/5Hc7UPdnAVEwjvVG2d8fmk,173784
+21,After the Rain,['Nickelback'],2024-07-18T10:53:59Z,False,spotify:track:00zFaqzO0s1WrsNSm1adlh,51,31xiablrubqwh5zisnlt5utvh6uu,https://open.spotify.com/track/00zFaqzO0s1WrsNSm1adlh,214648
+22,Beggin',['Måneskin'],2024-07-18T10:54:51Z,False,spotify:track:3Wrjm47oTz2sjIgck11l5e,84,31xiablrubqwh5zisnlt5utvh6uu,https://open.spotify.com/track/3Wrjm47oTz2sjIgck11l5e,211560
+23,Flowers,['Miley Cyrus'],2024-07-18T10:54:57Z,False,spotify:track:7DSAEUvxU8FajXtRloy8M0,90,31xiablrubqwh5zisnlt5utvh6uu,https://open.spotify.com/track/7DSAEUvxU8FajXtRloy8M0,200600
+24,"Can You Feel the Love Tonight - From ""A Whole New Sound""","['Simple Plan', 'Disney']",2024-07-18T11:03:33Z,False,spotify:track:372ltCYz1uLID85yHqe7S9,59,31xiablrubqwh5zisnlt5utvh6uu,https://open.spotify.com/track/372ltCYz1uLID85yHqe7S9,173350
+25,Como Si Fueras a Morir Mañana,['Leiva'],2024-07-18T11:03:48Z,False,spotify:track:4aAfLSx9IthpC3Pw5pNk3E,61,quesoymarmota,https://open.spotify.com/track/4aAfLSx9IthpC3Pw5pNk3E,240984
+26,"No Soy Yo, Eres Tú",['Conchita'],2024-07-18T11:04:41Z,True,spotify:track:4kbQiM51u2drG9Itboa87r,39,quesoymarmota,https://open.spotify.com/track/4kbQiM51u2drG9Itboa87r,239829
+27,Quién Diría,['DePol'],2024-07-18T11:05:25Z,False,spotify:track:0Fd3900xH77g0ARXQjtYvV,65,quesoymarmota,https://open.spotify.com/track/0Fd3900xH77g0ARXQjtYvV,183898
+28,La vida moderna (feat. Love of Lesbian),"['Veintiuno', 'Love of Lesbian']",2024-07-18T11:08:10Z,False,spotify:track:0ThmUxropRzljqKcVym0ca,56,quesoymarmota,https://open.spotify.com/track/0ThmUxropRzljqKcVym0ca,193746
+29,Que nada nos pare (lo más importante),"['ELYELLA', 'La La Love You']",2024-07-18T11:08:16Z,True,spotify:track:1FG7ZjnuT0O9CsDKOxND0E,62,quesoymarmota,https://open.spotify.com/track/1FG7ZjnuT0O9CsDKOxND0E,185331
+30,Como el Sol,"['Tatiana Delalvz', 'NIA']",2024-07-18T11:08:29Z,False,spotify:track:6ksoOhSHFDrSkw7gVcvU34,38,e4ta60wdfnbghf4t2uk6m9xu8,https://open.spotify.com/track/6ksoOhSHFDrSkw7gVcvU34,140346
+31,Yo pensaba que me había tocado Dios,"['Barry B', 'Carolina Durante']",2024-07-18T11:08:42Z,False,spotify:track:0vF9TaEJHO0Zm1ejF7AGC0,55,e4ta60wdfnbghf4t2uk6m9xu8,https://open.spotify.com/track/0vF9TaEJHO0Zm1ejF7AGC0,206099
+32,PLASTILINA,['Farga'],2024-07-18T11:10:06Z,False,spotify:track:1Qo2UEgzEUCBco0PKzkGv3,28,e4ta60wdfnbghf4t2uk6m9xu8,https://open.spotify.com/track/1Qo2UEgzEUCBco0PKzkGv3,190545
+33,PELO RIZAO,['Funzo & Baby Loud'],2024-07-18T11:10:24Z,False,spotify:track:47csYgBczYT8ZmX7nkOsWo,39,e4ta60wdfnbghf4t2uk6m9xu8,https://open.spotify.com/track/47csYgBczYT8ZmX7nkOsWo,194136
+34,Súbete la Radio,['Delaporte'],2024-07-18T11:10:42Z,False,spotify:track:3HkBjISRt7rX9LkMpIcl9u,35,e4ta60wdfnbghf4t2uk6m9xu8,https://open.spotify.com/track/3HkBjISRt7rX9LkMpIcl9u,144000
+35,Te seguiré besando,['Farga'],2024-07-18T11:10:53Z,False,spotify:track:5tCsCOEZtM7G6IOV9h7bdP,41,e4ta60wdfnbghf4t2uk6m9xu8,https://open.spotify.com/track/5tCsCOEZtM7G6IOV9h7bdP,167465
+36,Princesas,['Pereza'],2024-07-18T11:11:46Z,False,spotify:track:3hlWUNjAlbZ6nOjAbrivBv,66,quesoymarmota,https://open.spotify.com/track/3hlWUNjAlbZ6nOjAbrivBv,217000
+37,Bailemos,['Dani Fernández'],2024-07-18T11:12:10Z,False,spotify:track:5EnaxC9amhXY55ezw87SL8,60,quesoymarmota,https://open.spotify.com/track/5EnaxC9amhXY55ezw87SL8,210468
+38,Que Bonita la Vida,['Dani Martín'],2024-07-18T11:12:31Z,False,spotify:track:2WWLoX6L5TJ2xvm2DRcK6B,52,quesoymarmota,https://open.spotify.com/track/2WWLoX6L5TJ2xvm2DRcK6B,270653
+39,Color Esperanza,['Diego Torres'],2024-07-18T11:12:57Z,False,spotify:track:3T07pNAEVr9adeIG9i1ex4,66,quesoymarmota,https://open.spotify.com/track/3T07pNAEVr9adeIG9i1ex4,267106
+40,Bye Bye Bye,['No Resolve'],2024-07-18T11:13:38Z,False,spotify:track:2RdPXHHybIcO8VdIy38WMo,42,31xiablrubqwh5zisnlt5utvh6uu,https://open.spotify.com/track/2RdPXHHybIcO8VdIy38WMo,203217
+41,Antes Que Ver El Sol,"['Coti', 'Dani Martín']",2024-07-18T11:13:51Z,False,spotify:track:2xqNBP7kAqeZi96QISEGx4,55,quesoymarmota,https://open.spotify.com/track/2xqNBP7kAqeZi96QISEGx4,221626
+42,Potra Salvaje - Hard Remix,"['Isabel Aaiún', 'Fernando Moreno']",2024-07-18T11:14:45Z,False,spotify:track:4gdpQ6zuDsePnD1YIDJCRw,79,e4ta60wdfnbghf4t2uk6m9xu8,https://open.spotify.com/track/4gdpQ6zuDsePnD1YIDJCRw,342000
+43,Rosas,['La Oreja de Van Gogh'],2024-07-18T11:14:54Z,False,spotify:track:4waqcUQWdj0yH26STWl2Rq,80,quesoymarmota,https://open.spotify.com/track/4waqcUQWdj0yH26STWl2Rq,236506
+44,Caminando por la Vida,"['Melendi', 'David Bisbal']",2024-07-18T11:15:14Z,False,spotify:track:5oCeOZ2D2QXZwy5RmWDaUR,53,quesoymarmota,https://open.spotify.com/track/5oCeOZ2D2QXZwy5RmWDaUR,207084
+45,Tú Me Dejaste De Querer,"['C. Tangana', 'Niño de Elche', 'La Húngara']",2024-07-18T11:15:55Z,False,spotify:track:5ddFjrPG8NgQQ6xlOQIVd2,70,quesoymarmota,https://open.spotify.com/track/5ddFjrPG8NgQQ6xlOQIVd2,198493
+46,MALAMENTE - Cap.1: Augurio,['ROSALÍA'],2024-07-18T11:16:14Z,False,spotify:track:1B0BQaSRHxhI0AUlItY3LK,65,quesoymarmota,https://open.spotify.com/track/1B0BQaSRHxhI0AUlItY3LK,150027
+47,RATATATA,"['BABYMETAL', 'Electric Callboy']",2024-07-18T11:16:47Z,True,spotify:track:14WYmNQWvR2TTWoRp8t9Ml,76,31xiablrubqwh5zisnlt5utvh6uu,https://open.spotify.com/track/14WYmNQWvR2TTWoRp8t9Ml,216428
+48,Dance The Night - From Barbie The Album,['Dua Lipa'],2024-07-18T11:17:39Z,False,spotify:track:1vYXt7VSjH9JIM5oRRo7vA,84,divera,https://open.spotify.com/track/1vYXt7VSjH9JIM5oRRo7vA,176579
+49,El Secreto de las Tortugas - Version 2010,['Maldita Nerea'],2024-07-18T11:17:54Z,False,spotify:track:5AYNOmMBFz451CcOo7NTcF,51,1118786026,https://open.spotify.com/track/5AYNOmMBFz451CcOo7NTcF,238440
+50,Throne,['Bring Me The Horizon'],2024-07-18T11:17:55Z,False,spotify:track:0M3adYbGtyRHACP86dey1H,77,31xiablrubqwh5zisnlt5utvh6uu,https://open.spotify.com/track/0M3adYbGtyRHACP86dey1H,191520
+51,Dog Days Are Over,['Florence + The Machine'],2024-07-18T11:18:28Z,False,spotify:track:456WNXWhDwYOSf5SpTuqxd,80,divera,https://open.spotify.com/track/456WNXWhDwYOSf5SpTuqxd,252818
+52,Let Me Out,['Dover'],2024-07-18T11:19:01Z,False,spotify:track:22D8T98R2LL6PEC0LGrmYt,48,1118786026,https://open.spotify.com/track/22D8T98R2LL6PEC0LGrmYt,263093
+53,Zombie,['The Cranberries'],2024-07-18T11:19:22Z,False,spotify:track:7EZC6E7UjZe63f1jRmkWxt,83,31xiablrubqwh5zisnlt5utvh6uu,https://open.spotify.com/track/7EZC6E7UjZe63f1jRmkWxt,306440
+54,カリソメ乙女 - DEATH JAZZ ver.,"['Sheena Ringo', 'SOIL & “PIMP” SESSIONS']",2024-07-18T11:19:26Z,False,spotify:track:2M6Do3ldCBgbChvpxXhHfx,39,zevalle-es,https://open.spotify.com/track/2M6Do3ldCBgbChvpxXhHfx,149266
+55,Bad At Love,['Halsey'],2024-07-18T11:19:44Z,False,spotify:track:3OzCF9i6Ey7EkkAYJztmKp,71,divera,https://open.spotify.com/track/3OzCF9i6Ey7EkkAYJztmKp,181279
+56,Eastside (with Halsey & Khalid),"['benny blanco', 'Halsey', 'Khalid']",2024-07-18T11:19:48Z,False,spotify:track:7FGq80cy8juXBCD2nrqdWU,77,divera,https://open.spotify.com/track/7FGq80cy8juXBCD2nrqdWU,170769
+57,Strangers,"['Halsey', 'Lauren Jauregui']",2024-07-18T11:20:09Z,False,spotify:track:6uW5fyyosEMBKfg2W1ye1l,56,e4ta60wdfnbghf4t2uk6m9xu8,https://open.spotify.com/track/6uW5fyyosEMBKfg2W1ye1l,221205
+58,Piña,"['Snow Tha Product', 'Lauren Jauregui']",2024-07-18T11:20:15Z,True,spotify:track:27WpmDE56W905AhSoaNIkx,37,e4ta60wdfnbghf4t2uk6m9xu8,https://open.spotify.com/track/27WpmDE56W905AhSoaNIkx,144691
+59,I Really Want to Stay at Your House,"['Rosa Walton', 'Hallie Coggins']",2024-07-18T11:20:23Z,False,spotify:track:7mykoq6R3BArsSpNDjFQTm,73,divera,https://open.spotify.com/track/7mykoq6R3BArsSpNDjFQTm,246652
+60,Everlong,['Foo Fighters'],2024-07-18T11:20:58Z,False,spotify:track:5UWwZ5lm5PKu6eKsHAGxOk,84,divera,https://open.spotify.com/track/5UWwZ5lm5PKu6eKsHAGxOk,250546
+61,All The Small Things,['blink-182'],2024-07-18T11:23:48Z,False,spotify:track:2m1hi0nfMR9vdGC8UcrnwU,84,1118786026,https://open.spotify.com/track/2m1hi0nfMR9vdGC8UcrnwU,167066
+62,Mr. Brightside,['The Killers'],2024-07-18T11:24:02Z,False,spotify:track:003vvx7Niy0yvhvHt4a68B,87,1118786026,https://open.spotify.com/track/003vvx7Niy0yvhvHt4a68B,222973
+63,Best of You,['Foo Fighters'],2024-07-18T11:24:18Z,False,spotify:track:5FZxsHWIvUsmSK1IAvm2pp,75,1118786026,https://open.spotify.com/track/5FZxsHWIvUsmSK1IAvm2pp,255626
+64,Two Princes,['Spin Doctors'],2024-07-18T11:24:31Z,False,spotify:track:0cuq829zRNq4AEdmDJA4aw,73,1118786026,https://open.spotify.com/track/0cuq829zRNq4AEdmDJA4aw,256946
+65,What Could Have Been (from the series Arcane League of Legends),"['Sting', 'Ray Chen']",2024-07-18T11:24:59Z,False,spotify:track:6YB9jhzVEzw8CKeXD7Vx8j,32,divera,https://open.spotify.com/track/6YB9jhzVEzw8CKeXD7Vx8j,213474
+66,All Star,['Smash Mouth'],2024-07-18T11:25:24Z,False,spotify:track:3cfOd4CMv2snFaKAnMdnvK,80,1118786026,https://open.spotify.com/track/3cfOd4CMv2snFaKAnMdnvK,200373
+67,Livin' On A Prayer,['Bon Jovi'],2024-07-18T11:25:57Z,False,spotify:track:37ZJ0p5Jm13JPevGcx4SkF,85,1118786026,https://open.spotify.com/track/37ZJ0p5Jm13JPevGcx4SkF,249293
+68,Viva La Vida,['Coldplay'],2024-07-18T11:26:41Z,False,spotify:track:1mea3bSkSGXuIRvnydlB5b,88,31xiablrubqwh5zisnlt5utvh6uu,https://open.spotify.com/track/1mea3bSkSGXuIRvnydlB5b,242373
+69,That's My Girl,['Fifth Harmony'],2024-07-18T11:27:46Z,False,spotify:track:2ACOWPLUe4A4KuQ5ioD2od,71,e4ta60wdfnbghf4t2uk6m9xu8,https://open.spotify.com/track/2ACOWPLUe4A4KuQ5ioD2od,204013
+70,Superman,['Goldfinger'],2024-07-18T11:27:53Z,False,spotify:track:6cL7NCFSvqWrBH5r4mkvVV,52,1118786026,https://open.spotify.com/track/6cL7NCFSvqWrBH5r4mkvVV,185600
+71,99 Red Balloons,['Goldfinger'],2024-07-18T11:28:14Z,False,spotify:track:0rOTMSSa6yscfOrGnzfheM,60,1118786026,https://open.spotify.com/track/0rOTMSSa6yscfOrGnzfheM,229173
+72,Song 2 - 2012 Remaster,['Blur'],2024-07-18T11:29:31Z,False,spotify:track:1FTSo4v6BOZH9QxKc3MbVM,79,31xiablrubqwh5zisnlt5utvh6uu,https://open.spotify.com/track/1FTSo4v6BOZH9QxKc3MbVM,121160
+73,Tear Me to Pieces,['Story Of The Year'],2024-07-19T15:29:25Z,True,spotify:track:4o8iQ9HKmZP0D7eRcTnW0g,53,31xiablrubqwh5zisnlt5utvh6uu,https://open.spotify.com/track/4o8iQ9HKmZP0D7eRcTnW0g,176805
+74,Monsters (feat. blackbear),"['All Time Low', 'blackbear']",2024-07-19T15:31:17Z,True,spotify:track:0tyR7Bu9P086aWBFZ4QJoo,68,31xiablrubqwh5zisnlt5utvh6uu,https://open.spotify.com/track/0tyR7Bu9P086aWBFZ4QJoo,174067
+75,My Universe,"['Coldplay', 'BTS']",2024-07-19T15:32:27Z,False,spotify:track:46HNZY1i7O6jwTA7Slo2PI,76,31xiablrubqwh5zisnlt5utvh6uu,https://open.spotify.com/track/46HNZY1i7O6jwTA7Slo2PI,226198
+76,"Dance, Dance",['Fall Out Boy'],2024-07-19T15:32:50Z,False,spotify:track:0a7BloCiNzLDD9qSQHh5m7,77,31xiablrubqwh5zisnlt5utvh6uu,https://open.spotify.com/track/0a7BloCiNzLDD9qSQHh5m7,180266
+77,Buscando El Sol,['David Otero'],2024-07-19T15:35:32Z,False,spotify:track:3RFbAyuoyMu8ErN9PVspER,44,31xiablrubqwh5zisnlt5utvh6uu,https://open.spotify.com/track/3RFbAyuoyMu8ErN9PVspER,254440
